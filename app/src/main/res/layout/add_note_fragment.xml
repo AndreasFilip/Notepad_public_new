@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:id="@+id/relLayAddNote"
+    android:layout_gravity="top"
+    tools:context=".NoteFragment">
+
+<ImageView
+    android:background="#ffffff"
+    android:id="@+id/imgViewFrag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/imgViewFrag"
+        android:id="@+id/editFragEditTxt"
+        android:hint="Write something here..."
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

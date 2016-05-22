@@ -1,0 +1,77 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <!-- menu group -->
+    <group android:id="@+id/group_aSettings">
+    <item android:id="@+id/action_settings" android:visible="true"
+        android:title="Invert list"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_settings2" android:visible="true"
+        android:title="Order alphabetically"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_settings3" android:visible="true"
+        android:title="Order by date"
+        android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/action_settings4" android:visible="true"
+            android:title="Random order"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/sort_by_color" android:visible="true"
+            android:title="Sort by color"
+            android:orderInCategory="100" app:showAsAction="never" />
+        <item android:id="@+id/remove_all" android:visible="true"
+            android:title="Remove all notes"
+            android:orderInCategory="100" app:showAsAction="never" />
+    </group>
+    <item
+        android:id="@+id/add_button"
+        android:icon="@drawable/ic_note_add_white_36dp"
+        android:title="@+id/add_buttontitle1"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+    <item
+        android:visible="true"
+        android:id="@+id/remove_button"
+        android:icon="@drawable/ic_delete_white_36dp"
+        android:title="@+id/add_buttontitle2"
+        app:showAsAction="always"/>
+    <item
+        android:visible="true"
+        android:id="@+id/edit_button"
+        android:icon="@drawable/ic_create_white_36dp"
+        android:title="@string/hello_world"
+        app:showAsAction="always"/>
+    <item
+        android:visible="true"
+        android:id="@+id/color_button"
+        android:icon="@drawable/ic_palette_white_36dp"
+        android:title="@string/hello_world"
+        app:showAsAction="always"/>
+    <item
+        android:visible="true"
+        android:id="@+id/done_button"
+        android:icon="@drawable/ic_done_white_36dp"
+        android:title="@string/hello_world"
+        app:showAsAction="always"/>
+    <item
+        android:visible="true"
+        android:id="@+id/share_button"
+        android:icon="@drawable/ic_share_white_36dp"
+        android:title="Share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="always"/>
+    <item
+        android:foreground="?android:selectableItemBackground"
+        android:visible="true"
+        android:id="@+id/grid_button"
+        android:icon="@drawable/ic_view_module_white_36dp"
+        android:title="Grid"
+        app:showAsAction="always"/>
+    <item
+        android:foreground="?android:selectableItemBackground"
+        android:visible="true"
+        android:id="@+id/list_button"
+        android:icon="@drawable/ic_view_list_white_36dp"
+        android:title="List"
+        app:showAsAction="always"/>
+
+</menu>
